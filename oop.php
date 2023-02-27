@@ -35,18 +35,27 @@ echo $person -> getEmail();
 
 
 
-require_once 'index.html';
-$person -> submit($_POST['name'], $_POST['email']);
-echo "Name: " . $person->getName() . "<br>";
-echo "Email: " . $person->getEmail();
 
-// // Include the Person class file
-// require_once 'Person.php';
 
-// // Create a new instance of Person with the form data
-// $person = new Person($_POST['name'], $_POST['email']);
+  // Check if the form has been submitted
+  if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    // Retrieve the user's name and email from the form
+    $name = $_POST['name'];
+    $email = $_POST['email'];
 
-// // Display the person's name and email
-// echo "Name: " . $person->getName() . "<br>";
-// echo "Email: " . $person->getEmail();
-// ?>
+    // Include the Person class file
+    require_once('Person.php');
+
+    // Create a new instance of the Person class
+    $person = new Person($name,$email);
+
+    // Set the name and email properties using the setName() and setEmail() methods
+    $person->setName($name);
+    $person->setEmail($email);
+
+    // Display the name and email properties on the webpage
+    echo '<p>Name: ' . $person->getName() . '</p>';
+    echo '<p>Email: ' . $person->getEmail() . '</p>';
+  }
+
+
