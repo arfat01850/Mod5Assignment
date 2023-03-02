@@ -20,3 +20,10 @@ $queue = [
 
 array_unshift($queue, "apple", "raspberry");
 var_dump($queue);
+
+
+$fruits = array("d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple");
+asort($fruits);
+foreach ($fruits as $key => $val) {
+    echo "$key = $val\n";
+}
