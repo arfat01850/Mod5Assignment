@@ -40,7 +40,41 @@
 //       echo "Today is not Monday or Tuesday.";
 //   }
 
-  for ($i = 0; $i <= 10; $i++) {
-    echo $i;
-    echo PHP_EOL;
+//   for ($i = 0; $i <= 10; $i++) {
+//     echo $i;
+//     echo PHP_EOL;
+//   }
+
+//   $fruits = array("Apple","Banana", "Orange");
+//   for ($i = 0;  $i< count($fruits); $i++){
+//     echo $fruits[1];
+//   }  
+  
+  
+//   $fruits = array("Apple","Banana", "Orange");
+//   foreach( $fruits as $fruit){
+//     echo $fruit;
+//     echo PHP_EOL;
+//   }
+
+
+// $prices = array("Apple" => 0.50, "Banana" => 0.25, "Orange" => 0.75);
+//   foreach ($prices as $value) {
+//     echo "$value";
+//     echo PHP_EOL;
+//   }
+
+  $students = array(
+    array("name" => "John", "age" => 20),
+    array("name" => "Jane", "age" => 21),
+    array("name" => "Bob", "age" => 22)
+  );
+
+  foreach ($students as $student) {
+    echo $student["name"] . "'s age is " . $student["age"];
+   
+    foreach ($student as $key => $value) {
+      echo $key . ": " . $value;
+      echo PHP_EOL;
+    }
   }
