@@ -64,17 +64,33 @@
 //     echo PHP_EOL;
 //   }
 
-  $students = array(
-    array("name" => "John", "age" => 20),
-    array("name" => "Jane", "age" => 21),
-    array("name" => "Bob", "age" => 22)
-  );
+//   $students = array(
+//     array("name" => "John", "age" => 20),
+//     array("name" => "Jane", "age" => 21),
+//     array("name" => "Bob", "age" => 22)
+//   );
 
-  foreach ($students as $student) {
-    echo $student["name"] . "'s age is " . $student["age"];
+//   foreach ($students as $student) {
+//     echo $student["name"] . "'s age is " . $student["age"];
    
-    foreach ($student as $key => $value) {
-      echo $key . ": " . $value;
-      echo PHP_EOL;
-    }
-  }
+//     foreach ($student as $key => $value) {
+//       echo $key . ": " . $value;
+//       echo PHP_EOL;
+//     }
+//   }
+
+// $fruits = array("apple", "banana");
+// array_push($fruits, "orange", "grape","Abdur Rahim");
+// print_r($fruits);
+
+
+// $fruit= array("apple", "banana");
+// array_pop($fruit);
+// print_r($fruit);
+
+
+$fruits1 = array("apple", "banana");
+$fruits2 = array("orange", "grape","apple");
+$all_fruits = array_merge($fruits1, $fruits2);
+
+print_r($all_fruits);
