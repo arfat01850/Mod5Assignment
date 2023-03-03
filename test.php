@@ -13,17 +13,34 @@
 // print_r($value);
 
 
-$queue = [
-    "orange",
-    "banana"
-];
+// $queue = [
+//     "orange",
+//     "banana"
+// ];
 
-array_unshift($queue, "apple", "raspberry");
-var_dump($queue);
+// array_unshift($queue, "apple", "raspberry");
+// var_dump($queue);
 
 
-$fruits = array("d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple");
-asort($fruits);
-foreach ($fruits as $key => $val) {
-    echo "$key = $val\n";
-}
+// $fruits = array("d" => "lemon", "a" => "orange", "b" => "banana", "c" => "apple");
+// asort($fruits);
+// foreach ($fruits as $key => $val) {
+//     echo "$key = $val\n";
+// }
+
+//  $day = "Monday";
+//   switch ($day) {
+//     case "Monday":
+//       echo "Today is Monday.";
+//       break;
+//     case "Tuesday":
+//       echo "Today is Tuesday.";
+//       break;
+//     default:
+//       echo "Today is not Monday or Tuesday.";
+//   }
+
+  for ($i = 0; $i <= 10; $i++) {
+    echo $i;
+    echo PHP_EOL;
+  }
