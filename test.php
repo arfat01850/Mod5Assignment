@@ -89,8 +89,44 @@
 // print_r($fruit);
 
 
-$fruits1 = array("apple", "banana");
-$fruits2 = array("orange", "grape","apple");
-$all_fruits = array_merge($fruits1, $fruits2);
+// $fruits1 = array("apple", "banana");
+// $fruits2 = array("orange", "grape","apple");
+// $all_fruits = array_merge($fruits1, $fruits2);
 
-print_r($all_fruits);
+// print_r($all_fruits);
+
+
+// $numbers = array(1, 2, 3, 4, 5);
+// $reversed_numbers = array_reverse($numbers);
+// print_r($reversed_numbers);
+
+
+// $fruits = array("apple", "banana", "orange", "grape");
+// if (in_array("Banana", $fruits)) {
+//     echo "I have a banana!";
+// } else {
+//     echo "I don't have a banana.";
+// }
+
+
+// $string = "Hello, world!";
+// $new_string = str_replace("world", "PHP", $string);
+// echo $new_string;
+
+
+// $string = "  Hello, world!  ";
+// $new_string = trim($string);
+// echo $new_string;
+
+
+// $string = "apple,banana,orange";
+// $fruits = explode(",", $string);
+// print_r($fruits);
+
+// $implodeOption = implode($fruits);
+// print_r ($implodeOption);
+
+
+$string = "I love PHP & MySQL!";
+$new_string = htmlspecialchars($string);
+echo $new_string;
